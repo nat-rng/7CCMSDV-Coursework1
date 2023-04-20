@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="../stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.css"/>
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="top">
+                <div class="top-left">
+                    <div class="header">Racetrack Map</div>
+                    <div class="map-container">
+                        <svg id="racetrack_map" width="1320" height="720"></svg>
+                        <script src="../js/map.js"></script>
+                    </div>
+                  </div>
+                <div class="top-right">
+                    <div class="weather-pie">
+                        <div class="header">Overall Weather Conditions</div>
+                        <div id="pie_chart" class="chart-container"></div>
+                        <script src="../js/weather_conditions_pie.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="weather-bar">
+                    <div class="bar_header">
+                        Median Race Time By <br> Weather Condition
+                    </div>
+                    <div id="median_racetime_bar" class="bar-chart-container"></div>
+                    <script src="../js/median_racetimes.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

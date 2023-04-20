@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="../stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    </head>
+
+    <body>
+        <div class="racedetailsByYear">
+            <button class="back-btn" id="back-button"><i class="material-icons">arrow_back</i>Back to Race Details</button>
+            <div class="top-container">
+                <div class="race-title"></div>
+                <div class = "fastestTimeContainer">
+                    <div id="preRaceWeather" class="section section-1">
+                        <div id="preRaceWeatherTitle" class="section-title"></div>
+                        <i id="weather-before"></i>
+                        <div class ="section-content"></div>
+                    </div>
+                    <div id="startRaceWeather" class="section section-2">
+                        <div id="startRaceWeatherTitle" class="section-title"></div>
+                        <i id="weather-start"></i>
+                    </div>
+                    <div id="duringRaceWeather" class="section section-3">
+                        <div id="duringRaceWeatherTitle" class="section-title"></div>
+                        <i id="weather-during"></i>
+                    </div>
+                    <div id="lap_times" class="linegraph-container"></div>
+                </div>
+            </div>
+            <div id="middle-text-title" class="middle-container"></div>
+            <div class="bottom-container">
+                <div id="bar-l" class="bottom-container-l">
+                </div>
+                <div id="pie-r" class="bottom-container-r">
+                </div>
+            </div>
+            <div class="bottom-link-container">
+                <span id="bottom-right-text"></span><a id="bottom-right-link" href="#" target="_blank"></a>
+            </div>
+        </div>
+        <script src="../js/laptimes.js"></script>
+        <script src="../js/race_retire.js"></script>
+    </body>
+</html>
