@@ -1,5 +1,5 @@
 document.getElementById('back-button').addEventListener('click', function () {
-  window.location.href = 'main.html'
+  window.location.href = 'index.html'
 })
 
 function getQueryVariable (variable) {
