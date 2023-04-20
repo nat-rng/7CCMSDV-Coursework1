@@ -218,7 +218,7 @@ d3.csv('../data/racedata_main.csv', function (data) {
   }
 
   d3.json(
-    'https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson',
+    '../data/world.geojson',
     function (data1) {
       d3.json('../data/f1_locations.geojson', function (data2) {
         var features = data1.features.concat(data2.features)
